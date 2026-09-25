@@ -23,7 +23,8 @@
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
-        {% endfor %}
+        {% empty %}
+            <p>No hay publicaciones/p>
     </div>
 </body>
 </html>
