@@ -16,5 +16,14 @@
         <p>bts en la plata en octubreeee</p>
     </div>
 
+    <div>
+        {% for post in posts %} 
+        <div>
+            <p> publicado: {{ post.published_date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+        {% endfor %}
+    </div>
 </body>
 </html>
