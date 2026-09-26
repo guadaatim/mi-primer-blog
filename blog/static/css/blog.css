@@ -1,4 +1,10 @@
 h1, h2 {
     color: #7d2998;
+    padding-left: 15px;  
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
