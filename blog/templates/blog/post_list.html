@@ -11,26 +11,24 @@
 </head>
 
 <body>
-    <div>
-        <h1>bts</h1>
+    <div class="page-header-custom">
+        <h1><a href="/">BTS</a></h1>
     </div>
 
-    <div>
-        <p>publicado 24 de septiembre</p>
-        <h2>te amo bts</h2>
-        <p>bts en la plata en octubreeee</p>
-    </div>
-
-    <div>
-        {% for post in posts %} 
-        <div>
-            <p> publicado: {{ post.published_date }}</p>
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.text|linebreaksbr }}</p>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                {% for post in posts %} 
+                    <div class="post">
+                        <div class="date">
+                            <p>publicado: {{ post.published_date }}</p>
+                        </div>
+                        <h2><a href="">{{ post.title }}</a></h2>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-        {% empty %}
-            <p>No hay publicaciones</p>
-        {% endfor %}
     </div>
 </body>
 </html>

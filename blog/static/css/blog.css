@@ -1,10 +1,61 @@
-h1, h2 {
-    color: #7d2998;
-    padding-left: 15px;  
+.page-header-custom {
+    background-color: #7d2998;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
 }
 
-p {
-    margin-top: 15px;
-    margin-bottom: 15px;
+.page-header-custom h1, 
+.page-header-custom h1 a, 
+.page-header-custom h1 a:visited {
+    color: #ffffff !important;
+    font-size: 36pt;
+    text-decoration: none !important;
 }
 
+/* Margen del contenedor */
+.content {
+    margin-left: 40px;
+}
+
+/* Tipografía de títulos */
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+
+/* Fecha y botones */
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+/* Estilo de los posts */
+.post {
+    margin-bottom: 70px;
+}
+
+/* Para que los títulos de los posts NO salgan azules */
+.post h2, 
+.post h2 a, 
+.post h2 a:visited, 
+.post h2 a:active {
+    color: #000000 !important; /* Texto negro para los títulos de los posts */
+    text-decoration: none !important; /* Quita el subrayado azul */
+}
+
+.post h2 a:hover {
+    color: #7d2998 !important; /* Se pone violeta cuando pasas el mouse por encima */
+}
